@@ -1,0 +1,32 @@
+body {
+    background-color: #dceaf7;  /* Light blue */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a6caec;
+    display:flex;
+    justify-content: center;
+}
+
+ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 55px;
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: darkblue;
+}
+
+h1 {
+    text-align: center;
+}
