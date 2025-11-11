@@ -50,7 +50,7 @@ h1 {
     margin: 0;
     font-size: 24px;
     flex: 1;
-    text-align: middle;
+    text-align: center; /*this said middle*/
 
 
 }
@@ -99,3 +99,65 @@ h1 {
     height: 175px;
     max-width: 100%;
 }
+/*aboutus styles*/
+.aboutus-section{
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);         /*can remove all the shadows if it dosent suit*/
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutus-intro{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+.aboutus-intro img{
+    width: 350px;       /*might change*/
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
+}.company-text p {
+  font-size: 1rem;
+  line-height: 1.6; /*do i need this*/
+  color: black;
+  text-align: left;
+}
+.testimony-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  
+}
+.testimony-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;         /*might need to add a border box or remove display*/
+  display: block;
+  box-sizing: border-box
+}
+.testimony-box p {
+  margin-bottom: 10px;
+  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
+  color: black;
+}
+.testimony-box strong {
+  display: block;
+  font-size: 1rem;
+  color: #666;  /*colour difference not necessary*/
+  margin-top: 10px;
+}
+
