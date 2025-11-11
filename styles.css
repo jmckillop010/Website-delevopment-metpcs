@@ -39,7 +39,6 @@ h1 {
     color: white;
     padding: 50px 0;
     font-size: 14px;
-    font-family: Arial, sans-serif;
     margin-bottom: 13px;
     display: flex;
     justify-content: space-between;
@@ -60,16 +59,6 @@ h1 {
     height: 100px;
     width: 100px;
     position: absolute;
-}
-
-.footer {
-    background-color: rgb(81, 146, 224);
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
 }
 
 .content {
@@ -99,3 +88,29 @@ h1 {
     height: 175px;
     max-width: 100%;
 }
+
+footer {
+    background-color: rgb(81, 146, 224);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+footer .footer-text {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-icons {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 50px;
+}
+
+
