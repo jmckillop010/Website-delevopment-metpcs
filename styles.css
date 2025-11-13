@@ -37,29 +37,35 @@ h1 {
 .header {
     background-color: rgb(81, 146, 224);
     color: white;
-    padding: 50px 0;
-    font-size: 14px;
-    margin-bottom: 13px;
+    padding: 20px 50px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    height: 100px;
+    width: 100px;
+    position: relative;  /* Changed from absolute to relative as I encoutered hyperlink issues */
     align-items: center;
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 24px;
     flex: 1;
-    text-align: center; /*this said middle*/
-
-
+    text-align: center;
+    margin-right: 100px; /* Allows the text to stay centered without the image position affecting it */
 }
 
-.header img {
-    margin-left: 125px;
-    height: 100px;
-    width: 100px;
-    position: absolute;
+.header a {
+    left: 100px; /* Adjusting image position with the link to fix link click area */
+    position: relative;
+    display: inline-block;
 }
+
+.header a img {
+    display: block;
+}
+
 
 .content {
     text-align: center;
