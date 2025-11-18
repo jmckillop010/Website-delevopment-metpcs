@@ -94,6 +94,22 @@ h1 {
     height: 175px;
     max-width: 100%;
 }
+.content-box-home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-home input {
+    padding : 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+.content-box-home button {
+    padding: 10px 30px;
+    margin-top: 10px;
+}
 /*aboutus styles*/
 .aboutus-section{
   margin: 20px auto;
@@ -174,9 +190,9 @@ footer .footer-text {
 
 footer .footer-icons {
     display: flex;
-    gap: 15px;
+    gap: 30px;
     position: absolute;
-    right: 50px;
+    right: 60px;
 }
 
 /*contactus styles*/
