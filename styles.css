@@ -136,6 +136,10 @@ h1 {
     text-align: center !important;
 }
 
+.header a {
+    left: 0 !important;
+}
+
 ul {
     flex-direction: column !important; /* Hopefully will allow navbar to be fully visable on mobile */
     align-items: center !important;
