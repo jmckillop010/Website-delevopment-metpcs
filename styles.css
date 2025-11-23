@@ -1,5 +1,6 @@
 body {
     background-color: #dceaf7;  /* Light blue */
+    margin: auto;    /*noticed inspect on chrome adding margin tried this remove if needed*/
 }
 
 ul {
@@ -87,6 +88,8 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 350px;
+    vertical-align: auto; margin: 1%;
+   
 }
 
 .content-box-home img {
@@ -103,7 +106,7 @@ h1 {
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 .aboutus-intro{
     display: flex;
@@ -188,7 +191,7 @@ footer .footer-icons {
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
-        justify-content: center;
+        justify-content: right;
 }
 .contactus-intro{
     gap: 30px;
@@ -215,11 +218,13 @@ flex-direction: column;
 .title-box{
     margin: 20px auto;
     text-align: center;
-    align-self: calc(center+50px);  /*this calc might be useless*/
     background-color: rgb(161, 206, 255);
-    border-radius: 5.5px;
-    border-color: #333;
-    border-width: 4px;
-    width: 200px;
-    height: calc(center+5px);    
+    width: 100%;
+}
+
+h4{
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
