@@ -1,3 +1,4 @@
+/* ui for all pages */
 body {
     background-color: #dceaf7;  /* Light blue */
     margin: auto;    /*noticed inspect on chrome adding margin tried this remove if needed*/
@@ -67,7 +68,7 @@ h1 {
     display: block;
 }
 
-
+/* index/home page styles */
 .content {
     text-align: center;
     margin: 20px;
@@ -97,6 +98,25 @@ h1 {
     height: 175px;
     max-width: 100%;
 }
+.content-box-home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-home input {
+    padding : 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+.content-box-home button {
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+
+
 /*aboutus styles*/
 .aboutus-section{
   margin: 20px auto;
@@ -177,9 +197,9 @@ footer .footer-text {
 
 footer .footer-icons {
     display: flex;
-    gap: 15px;
+    gap: 30px;
     position: absolute;
-    right: 50px;
+    right: 60px;
 }
 
 /*contactus styles*/
@@ -228,3 +248,108 @@ h4{
     color: #333;
     font-family: Arial, sans-serif;
 }
+
+/* mobile accessibility fixes AND imporveents for header, home page and footer */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column !important; /* Attempting to stack vertically to pervent the overlap issues */
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 15px 10px !important;
+        text-align: center !important;
+
+}
+
+.header img {
+    width: 70px !important;
+    height: auto !important; /* ensures no squashing or overlap */
+    margin-bottom: 10px !important;
+
+}
+
+.header h1 {
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+.header a {
+    left: 0 !important;
+}
+
+ul {
+    flex-direction: column !important; /* Hopefully will allow navbar to be fully visable on mobile */
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 10px !important;
+    gap: 8px !important;
+}
+
+ul li a {
+    width: 90% !important;
+    max-width: 300px !important;
+    padding: 12px 15px !important;
+    margin: 5px !important;
+    text-align: center;
+    border-radius: 5px !important;
+}
+
+.content-row-home {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+}
+
+.content-box-home {
+    width: 90% !important;
+    height: auto !important;
+    padding: 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.content-box-home img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important; /* aiming to pervent inmage squishing vertically */
+    margin-bottom: 10px !important;
+}
+
+.content-box-home:nth-child(2) img {
+    max-height: 200px !important; /* This picture is having the most issues, i used this new command from w3schools to attempt fixing it seperarely */
+    object-fit: cover !important;
+}
+
+.content-box-home input {
+    width: 90% !important;
+    max-width: 300px !important;
+
+}
+
+.content-box-home button {
+    width: 90% !important;
+    max-width: 300px !important;
+}
+
+footer {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 20px 10px !important;
+}
+
+footer .footer-icons {
+    position: relative !important;
+    right: 0 !important;
+    margin-top: 10px !important;
+    justify-content: center !important;
+    gap: 15px !important;
+}
+
+footer .footer-icons img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+
+}   
