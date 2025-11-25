@@ -9,21 +9,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
->>>>>>> 3515814 (test - parts)
 }
 
-ul {
-    list-style-type: none;
+body {
+    /* Page background: keep the banner/footer colour distinct from main content */
+    background-color: #ffffff; /* white (was light blue) */
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #dceaf7; /* keep nav a light blue so it sits visually between header and content */
-    display:flex;
-    justify-content: center;
+    box-sizing: border-box;
 }
-
-ul li a {
-    display: block;
     color: black;
     text-align: center;
     padding: 14px 55px;
@@ -576,4 +570,3 @@ margin: 10px;
 
     
 }
->>>>>>> 3515814 (test - parts)
