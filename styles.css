@@ -156,6 +156,7 @@ h1 {
   
 }
 .testimony-box {
+
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 8px;
@@ -225,14 +226,15 @@ footer .footer-icons {
   flex-wrap: wrap;
 }
 .companyinfo-box {
-flex-direction: column;
+    flex-direction: column;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 12px;
   border-radius: 8px;
   width: 48%;
+  height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  display: block;
+  display: flex;
   box-sizing: border-box
 }
 .title-box{
@@ -241,7 +243,29 @@ flex-direction: column;
     background-color: rgb(161, 206, 255);
     width: 100%;
 }
-
+.contact-us-img{
+max-width: 80px;
+max-height: 80px;
+vertical-align: -28px;
+margin-bottom: 10px;
+margin: 10px;
+}
+    .contact-us-column{
+    
+     background-color: #f2f2f2;
+     padding: 15px;
+     border-radius: 8px;
+     width: 48%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     display: block;
+     box-sizing: border-box;
+     column-count: 2;
+     column-gap: 1px;
+    }
+    .contact-us-column strong{
+        color: #333;
+    }   
 h4{
     font-size: 2rem;
     text-align: center;
@@ -350,6 +374,122 @@ footer .footer-icons img {
     width: 40px !important;
     height: 40px !important;
 }
+/*contact us mobile styles*/
+.contactus-section{
+  max-width: 768px;
+  margin-left: 2%;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    flex-wrap: wrap;
+        justify-content: center !important;
+    }
+.contactus-intro{
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
 
+.companyinfo-box {
+    flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  width: 98%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+  box-sizing: border-box
+}
+.title-box{
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(161, 206, 255);
+    width: 100%;
+}
+.contact-us-img{
+max-width: 80px;
+max-height: 80px;
+vertical-align: -28px;
+margin-bottom: 10px;
+margin: 10px;
+}
+    .contact-us-column{
+    
+     background-color: #f2f2f2;
+     padding: 15px;
+     border-radius: 8px;
+     width: 98%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     display: block;
+     box-sizing: border-box;
+     column-count: 1;
+     column-gap: 1px;
+    }
+    .contact-us-column strong{
+        color: #333;
+    }   
+    /*about us mobile styles*/
+    .aboutus-section{
+  margin-left: 2%;
+  max-width: 768px;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+.aboutus-intro{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 
+}
+.aboutus-intro img{
+    width: 98%;       /*might change*/
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
+}.company-text p {
+  font-size: 1rem;
+  line-height: 1.6; /*do i need this*/
+  color: black;
+  text-align: center;
+}
+.testimony-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  
+}
+.testimony-box {
+
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 98%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+
+}
+.testimony-box p {
+  margin-bottom: 10px;
+  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
+  color: black;
+}
+.testimony-box strong {
+  display: block;
+  font-size: 1rem;
+  color: #666;  /*colour difference not necessary*/
+  margin-top: 10px;
+}
 }   
