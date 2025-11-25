@@ -1,5 +1,9 @@
 body {
-    background-color: #dceaf7;  /* Light blue */
+    /* Page background: keep the banner/footer colour distinct from main content */
+    background-color: #ffffff; /* white (was light blue) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -7,7 +11,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #dceaf7;
+    background-color: #dceaf7; /* keep nav a light blue so it sits visually between header and content */
     display:flex;
     justify-content: center;
 }
@@ -93,6 +97,21 @@ h1 {
     margin-bottom: 10px;
     height: 175px;
     max-width: 100%;
+}
+
+
+.image-placeholder{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    background: linear-gradient(180deg, #f9f9f9, #ededed);
+    border: 2px dashed #cccccc;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-style: italic;
 }
 .content-box-home form {
     display: flex;
@@ -218,7 +237,7 @@ footer .footer-icons {
   flex-wrap: wrap;
 }
 .companyinfo-box {
-flex-direction: column;
+    flex-direction: column;
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 8px;
@@ -226,16 +245,18 @@ flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   display: block;
-  box-sizing: border-box
+    box-sizing: border-box;
 }
 .title-box{
     margin: 20px auto;
     text-align: center;
-    align-self: calc(center+50px);  /*this calc might be useless*/
+    align-self: center;  /* was invalid: replaced invalid calc() with a valid value */
     background-color: rgb(161, 206, 255);
     border-radius: 5.5px;
     border-color: #333;
     border-width: 4px;
     width: 200px;
-    height: calc(center+5px);    
+    height: auto; /* removed invalid calc() */
+
+    
 }
