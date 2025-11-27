@@ -1,9 +1,5 @@
 /* ui for all pages */
 body {
-<<<<<<< HEAD
-    background-color: #dceaf7;  /* Light blue */
-    margin: auto;    /*noticed inspect on chrome adding margin tried this remove if needed*/
-=======
     /* Page background: keep the banner/footer colour distinct from main content */
     background-color: #ffffff; /* white (was light blue) */
     margin: 0;
@@ -11,13 +7,8 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    /* Page background: keep the banner/footer colour distinct from main content */
-    background-color: #ffffff; /* white (was light blue) */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ul li a {
+    display: block;
     color: black;
     text-align: center;
     padding: 14px 55px;
