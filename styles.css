@@ -1,7 +1,15 @@
 /* ui for all pages */
 body {
+<<<<<<< HEAD
     background-color: #dceaf7;  /* Light blue */
     margin: auto;    /*noticed inspect on chrome adding margin tried this remove if needed*/
+=======
+    /* Page background: keep the banner/footer colour distinct from main content */
+    background-color: #ffffff; /* white (was light blue) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+>>>>>>> 3515814 (test - parts)
 }
 
 ul {
@@ -9,7 +17,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #dceaf7;
+    background-color: #dceaf7; /* keep nav a light blue so it sits visually between header and content */
     display:flex;
     justify-content: center;
 }
@@ -97,6 +105,21 @@ h1 {
     margin-bottom: 10px;
     height: 175px;
     max-width: 100%;
+}
+
+
+.image-placeholder{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    background: linear-gradient(180deg, #f9f9f9, #ededed);
+    border: 2px dashed #cccccc;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-style: italic;
 }
 .content-box-home form {
     display: flex;
@@ -449,11 +472,12 @@ footer .footer-icons img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: block;
-  box-sizing: border-box
+    box-sizing: border-box;
 }
 .title-box{
     margin: 20px auto;
     text-align: center;
+<<<<<<< HEAD
     background-color: rgb(161, 206, 255);
     width: 100%;
 }
@@ -541,3 +565,15 @@ margin: 10px;
   margin-top: 10px;
 }
 }   
+=======
+    align-self: center;  /* was invalid: replaced invalid calc() with a valid value */
+    background-color: rgb(161, 206, 255);
+    border-radius: 5.5px;
+    border-color: #333;
+    border-width: 4px;
+    width: 200px;
+    height: auto; /* removed invalid calc() */
+
+    
+}
+>>>>>>> 3515814 (test - parts)
