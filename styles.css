@@ -281,53 +281,151 @@ h4{
     font-family: Arial, sans-serif;
 }
 
-/* product page styles */
-.content {
-    text-align: center;
-    margin: 20px;
-}
+/* product page styles */ 
 
-.content-row-product {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-}
+.contentp { 
 
-.content-box-product {
-    background-color: #f2f2f2;
-    padding: 15px;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: 350px;
-    vertical-align: auto; margin: 1%;
-   
-}
+text-align: center; 
 
-.content-box-product img {
-    margin-bottom: 10px;
-    height: 175px;
-    max-width: 100%;
-}
-.content-box-product form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+margin: 20px; 
 
-.content-box-product input {
-    padding : 8px;
-    margin: 8px;
-    width: 80%;
-}
+} 
 
-.content-box-product button {
-    padding: 10px 30px;
-    margin-top: 10px;
-}
+ 
 
+/* product boxes + images */ 
+
+.content-row-product { 
+
+display: flex; 
+
+justify-content: center; 
+
+flex-wrap: wrap; 
+
+gap: 20px; 
+
+} 
+
+ 
+
+.content-box-product { 
+
+background-color: #f2f2f2; 
+
+padding: 15px; 
+
+border-radius: 8px; 
+
+width: 22%; 
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+text-align: center; 
+
+height: auto; 
+
+} 
+
+ 
+
+.content-box-product img { 
+
+margin-bottom: 10px; 
+
+width: 100%; 
+
+height: auto; 
+
+max-height: 175px; 
+
+object-fit: contain; 
+
+} 
+
+ 
+
+/* bullet point list */ 
+
+.content-box-product .product-specs { 
+
+display: block !important; 
+
+list-style-type: disc !important; 
+
+list-style-position: outside !important; 
+
+padding-left: 20px !important;  
+
+margin: 10px 0 !important; 
+
+background: transparent !important;  
+
+color: black !important;  
+
+} 
+
+ 
+
+.content-box-product .product-specs li { 
+
+margin-bottom: 6px; 
+
+color: inherit !important; 
+
+} 
+
+ 
+
+.content-box-product .product-specs li a { 
+
+color: inherit !important; 
+
+text-decoration: none; 
+
+} 
+
+ 
+
+/* MOBILE LAYOUT */ 
+
+@media (max-width: 768px) { 
+
+.content-row-product { 
+
+display: flex; 
+
+flex-direction: column;  
+
+align-items: center;  
+
+gap: 20px;  
+
+} 
+
+ 
+
+.content-box-product { 
+
+width: 90%;  
+
+max-width: 350px;  
+
+} 
+
+ 
+
+.content-box-product img { 
+
+width: 100%; 
+
+height: auto; 
+
+} 
+
+} 
+
+ 
 
 /* mobile accessibility fixes AND imporveents for header, home page and footer */
 
