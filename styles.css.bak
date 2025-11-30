@@ -1,0 +1,579 @@
+/* ui for all pages */
+body {
+<<<<<<< HEAD
+    background-color: #dceaf7;  /* Light blue */
+    margin: auto;    /*noticed inspect on chrome adding margin tried this remove if needed*/
+=======
+    /* Page background: keep the banner/footer colour distinct from main content */
+    background-color: #ffffff; /* white (was light blue) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+>>>>>>> 3515814 (test - parts)
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dceaf7; /* keep nav a light blue so it sits visually between header and content */
+    display:flex;
+    justify-content: center;
+}
+
+ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 55px;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: rgb(161, 206, 255);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #a6caec;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgb(81, 146, 224);
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    height: 100px;
+    width: 100px;
+    position: relative;  /* Changed from absolute to relative as I encoutered hyperlink issues */
+    align-items: center;
+}
+
+.header h1 {
+    flex: 1;
+    text-align: center;
+    margin-right: 100px; /* Allows the text to stay centered without the image position affecting it */
+}
+
+.header a {
+    left: 100px; /* Adjusting image position with the link to fix link click area */
+    position: relative;
+    display: inline-block;
+}
+
+.header a img {
+    display: block;
+}
+
+/* index/home page styles */
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-row-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-box-home {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 350px;
+    vertical-align: auto; margin: 1%;
+   
+}
+
+.content-box-home img {
+    margin-bottom: 10px;
+    height: 175px;
+    max-width: 100%;
+}
+
+
+.image-placeholder{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    background: linear-gradient(180deg, #f9f9f9, #ededed);
+    border: 2px dashed #cccccc;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-style: italic;
+}
+.content-box-home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-home input {
+    padding : 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+.content-box-home button {
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+
+
+/*aboutus styles*/
+.aboutus-section{
+  margin: 20px auto;
+  max-width: 1000px;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.aboutus-intro{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+.aboutus-intro img{
+    width: 350px;       /*might change*/
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
+}.company-text p {
+  font-size: 1rem;
+  line-height: 1.6; /*do i need this*/
+  color: black;
+  text-align: left;
+}
+.testimony-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  
+}
+.testimony-box {
+
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: block;
+  box-sizing: border-box;
+}
+.testimony-box p {
+  margin-bottom: 10px;
+  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
+  color: black;
+}
+.testimony-box strong {
+  display: block;
+  font-size: 1rem;
+  color: #666;  /*colour difference not necessary*/
+  margin-top: 10px;
+}
+
+
+footer {
+    background-color: rgb(81, 146, 224);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+footer .footer-text {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-icons {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 60px;
+}
+
+/*contactus styles*/
+.contactus-section{
+ margin: 20px auto;
+  max-width: 1000px;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+        justify-content: right;
+}
+.contactus-intro{
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.contactus-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.companyinfo-box {
+    flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  width: 48%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  box-sizing: border-box
+}
+.title-box{
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(161, 206, 255);
+    width: 100%;
+}
+.contact-us-img{
+max-width: 80px;
+max-height: 80px;
+vertical-align: -28px;
+margin-bottom: 10px;
+margin: 10px;
+}
+    .contact-us-column{
+    
+     background-color: #f2f2f2;
+     padding: 15px;
+     border-radius: 8px;
+     width: 48%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     display: block;
+     box-sizing: border-box;
+     column-count: 2;
+     column-gap: 1px;
+    }
+    .contact-us-column strong{
+        color: #333;
+    }   
+h4{
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* product page styles */
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-row-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-box-product {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 350px;
+    vertical-align: auto; margin: 1%;
+   
+}
+
+.content-box-product img {
+    margin-bottom: 10px;
+    height: 175px;
+    max-width: 100%;
+}
+.content-box-product form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-product input {
+    padding : 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+.content-box-product button {
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+
+/* mobile accessibility fixes AND imporveents for header, home page and footer */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column !important; /* Attempting to stack vertically to pervent the overlap issues */
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 15px 10px !important;
+        text-align: center !important;
+
+}
+
+.header img {
+    width: 70px !important;
+    height: auto !important; /* ensures no squashing or overlap */
+    margin-bottom: 10px !important;
+
+}
+
+.header h1 {
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+.header a {
+    left: 0 !important;
+}
+
+ul {
+    flex-direction: column !important; /* Hopefully will allow navbar to be fully visable on mobile */
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 10px !important;
+    gap: 8px !important;
+}
+
+ul li a {
+    width: 90% !important;
+    max-width: 300px !important;
+    padding: 12px 15px !important;
+    margin: 5px !important;
+    text-align: center;
+    border-radius: 5px !important;
+}
+
+.content-row-home {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+}
+
+.content-box-home {
+    width: 90% !important;
+    height: auto !important;
+    padding: 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.content-box-home img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important; /* aiming to pervent inmage squishing vertically */
+    margin-bottom: 10px !important;
+}
+
+.content-box-home:nth-child(2) img {
+    max-height: 200px !important; /* This picture is having the most issues, i used this new command from w3schools to attempt fixing it seperarely */
+    object-fit: cover !important;
+}
+
+.content-box-home input {
+    width: 90% !important;
+    max-width: 300px !important;
+
+}
+
+.content-box-home button {
+    width: 90% !important;
+    max-width: 300px !important;
+}
+
+footer {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 20px 10px !important;
+}
+
+footer .footer-icons {
+    position: relative !important;
+    right: 0 !important;
+    margin-top: 10px !important;
+    justify-content: center !important;
+    gap: 15px !important;
+}
+
+footer .footer-icons img {
+    width: 40px !important;
+    height: 40px !important;
+}
+/*contact us mobile styles*/
+.contactus-section{
+  max-width: 768px;
+  margin-left: 2%;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    flex-wrap: wrap;
+        justify-content: center !important;
+    }
+.contactus-intro{
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.companyinfo-box {
+    flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 8px;
+  width: 98%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+    box-sizing: border-box;
+}
+.title-box{
+    margin: 20px auto;
+    text-align: center;
+<<<<<<< HEAD
+    background-color: rgb(161, 206, 255);
+    width: 100%;
+}
+.contact-us-img{
+max-width: 80px;
+max-height: 80px;
+vertical-align: -28px;
+margin-bottom: 10px;
+margin: 10px;
+}
+    .contact-us-column{
+    
+     background-color: #f2f2f2;
+     padding: 15px;
+     border-radius: 8px;
+     width: 98%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     display: block;
+     box-sizing: border-box;
+     column-count: 1;
+     column-gap: 1px;
+    }
+    .contact-us-column strong{
+        color: #333;
+    }   
+    /*about us mobile styles*/
+    .aboutus-section{
+  margin-left: 2%;
+  max-width: 768px;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+.aboutus-intro{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+.aboutus-intro img{
+    width: 98%;       /*might change*/
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
+}.company-text p {
+  font-size: 1rem;
+  line-height: 1.6; /*do i need this*/
+  color: black;
+  text-align: center;
+}
+.testimony-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  
+}
+.testimony-box {
+
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 98%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+
+}
+.testimony-box p {
+  margin-bottom: 10px;
+  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
+  color: black;
+}
+.testimony-box strong {
+  display: block;
+  font-size: 1rem;
+  color: #666;  /*colour difference not necessary*/
+  margin-top: 10px;
+}
+}   
+=======
+    align-self: center;  /* was invalid: replaced invalid calc() with a valid value */
+    background-color: rgb(161, 206, 255);
+    border-radius: 5.5px;
+    border-color: #333;
+    border-width: 4px;
+    width: 200px;
+    height: auto; /* removed invalid calc() */
+
+    
+}
+>>>>>>> 3515814 (test - parts)
