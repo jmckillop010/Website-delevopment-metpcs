@@ -7,6 +7,24 @@ body {
     box-sizing: border-box;
 }
 
+/* Desktop Navbar */
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;      /* remove default ul padding */
+    margin: 0;       /* remove default ul margin */
+    gap: 5px;
+    list-style: none; /* remove bullets */
+}
+
+ul li {
+    list-style: none; /* remove bullets from li */
+    margin: 0;        /* remove any default li margin */
+    padding: 0;       /* remove any default li padding */
+}
+
 ul li a {
     display: block;
     color: black;
@@ -29,32 +47,33 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
+/* Header */
 .header {
     background-color: rgb(81, 146, 224);
     color: white;
     padding: 20px 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     position: relative;
 }
 
 .header img {
     height: 100px;
     width: 100px;
-    position: relative;  /* Changed from absolute to relative as I encoutered hyperlink issues */
-    align-items: center;
+    position: relative;  /* Changed from absolute to relative to fix hyperlink issues */
 }
 
 .header h1 {
     flex: 1;
     text-align: center;
-    margin-right: 100px; /* Allows the text to stay centered without the image position affecting it */
+    margin-right: 100px; /* Allows the text to stay centered without the image affecting it */
 }
 
 .header a {
-    left: 100px; /* Adjusting image position with the link to fix link click area */
     position: relative;
     display: inline-block;
+    left: 12%;
 }
 
 .header a img {
@@ -82,8 +101,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 350px;
-    vertical-align: auto; margin: 1%;
-   
+    margin: 1%;
 }
 
 .content-box-home img {
@@ -92,8 +110,7 @@ h1 {
     max-width: 100%;
 }
 
-
-.image-placeholder{
+.image-placeholder {
     width: 100%;
     height: 175px;
     display: flex;
@@ -106,6 +123,7 @@ h1 {
     border-radius: 6px;
     font-style: italic;
 }
+
 .content-box-home form {
     display: flex;
     flex-direction: column;
@@ -113,7 +131,7 @@ h1 {
 }
 
 .content-box-home input {
-    padding : 8px;
+    padding: 8px;
     margin: 8px;
     width: 80%;
 }
@@ -123,70 +141,72 @@ h1 {
     margin-top: 10px;
 }
 
-
-
-/*aboutus styles*/
-.aboutus-section{
-  margin: 20px auto;
-  max-width: 1000px;
-  font-family: Arial, sans-serif;
+/* aboutus styles */
+.aboutus-section {
+    margin: 20px auto;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: left;
 }
-.aboutus-intro{
+
+.aboutus-intro {
     display: flex;
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-
 }
-.aboutus-intro img{
-    width: 350px;       /*might change*/
+
+.aboutus-intro img {
+    width: 350px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
-}.company-text p {
-  font-size: 1rem;
-  line-height: 1.6; /*do i need this*/
-  color: black;
-  text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+.company-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+}
+
 .testimony-row {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .testimony-box {
-
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-  width: 48%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  display: block;
-  box-sizing: border-box;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
 }
+
 .testimony-box p {
-  margin-bottom: 10px;
-  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
-  color: black;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
 }
+
 .testimony-box strong {
-  display: block;
-  font-size: 1rem;
-  color: #666;  /*colour difference not necessary*/
-  margin-top: 10px;
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
 }
 
-
+/* Footer */
 footer {
     background-color: rgb(81, 146, 224);
     text-align: center;
@@ -211,76 +231,82 @@ footer .footer-icons {
     right: 60px;
 }
 
-/*contactus styles*/
-.contactus-section{
- margin: 20px auto;
-  max-width: 1000px;
-  font-family: Arial, sans-serif;
+/* contactus styles */
+.contactus-section {
+    margin: 20px auto;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
-        justify-content: right;
+    justify-content: right;
 }
-.contactus-intro{
+
+.contactus-intro {
     gap: 30px;
     align-items: center;
     margin-bottom: 25px;
 }
+
 .contactus-row {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .companyinfo-box {
     flex-direction: column;
-  background-color: #f2f2f2;
-  padding: 12px;
-  border-radius: 8px;
-  width: 48%;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  display: flex;
-  box-sizing: border-box
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 8px;
+    width: 48%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    box-sizing: border-box;
 }
-.title-box{
+
+.title-box {
     margin: 20px auto;
     text-align: center;
     background-color: rgb(161, 206, 255);
     width: 100%;
 }
-.contact-us-img{
-max-width: 80px;
-max-height: 80px;
-vertical-align: -28px;
-margin-bottom: 10px;
-margin: 10px;
+
+.contact-us-img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 10px;
 }
-    .contact-us-column{
-    
-     background-color: #f2f2f2;
-     padding: 15px;
-     border-radius: 8px;
-     width: 48%;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
-     display: block;
-     box-sizing: border-box;
-     column-count: 2;
-     column-gap: 1px;
-    }
-    .contact-us-column strong{
-        color: #333;
-    }   
-h4{
+
+.contact-us-column {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    column-count: 2;
+    column-gap: 1px;
+}
+
+.contact-us-column strong {
+    color: #333;
+}
+
+h4 {
     font-size: 2rem;
     text-align: center;
     color: #333;
     font-family: Arial, sans-serif;
 }
 
+<<<<<<< HEAD
 /* product page styles */ 
 .contentp { 
 text-align: center; 
@@ -507,89 +533,213 @@ footer .footer-icons img {
     margin: 20px auto;
     text-align: center;
     background-color: rgb(161, 206, 255);
-    width: 100%;
+=======
+/* product page styles */
+.contentp {
+    text-align: center;
+    margin: 20px;
 }
-.contact-us-img{
-max-width: 80px;
-max-height: 80px;
-vertical-align: -28px;
-margin-bottom: 10px;
-margin: 10px;
-}
-    .contact-us-column{
-    
-     background-color: #f2f2f2;
-     padding: 15px;
-     border-radius: 8px;
-     width: 98%;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
-     display: block;
-     box-sizing: border-box;
-     column-count: 1;
-     column-gap: 1px;
-    }
-    .contact-us-column strong{
-        color: #333;
-    }   
-    /*about us mobile styles*/
-    .aboutus-section{
-  margin-left: 2%;
-  max-width: 768px;
-  font-family: Arial, sans-serif;
+
+.content-row-product {
     display: flex;
-    flex-direction: column !important;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center !important;
 }
-.aboutus-intro{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
 
-}
-.aboutus-intro img{
-    width: 98%;       /*might change*/
-    height: auto;
+.content-box-product {
+    background-color: #f2f2f2;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0   2px 6px rgba(0, 0, 0, 0.1);
-}.company-text p {
-  font-size: 1rem;
-  line-height: 1.6; /*do i need this*/
-  color: black;
-  text-align: center;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: auto;
 }
-.testimony-row {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  flex-wrap: wrap;
 
-  
+.content-box-product img {
+    margin-bottom: 10px;
+>>>>>>> bb0c217 (coding fixes 2)
+    width: 100%;
+    height: auto;
+    max-height: 175px;
+    object-fit: contain;
 }
-.testimony-box {
 
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-  width: 98%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: block;
+.content-box-product .product-specs {
+    display: block;
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    margin: 10px 0;
+    background: transparent;
+    color: black;
+}
 
+.content-box-product .product-specs li {
+    margin-bottom: 6px;
+    color: inherit;
 }
-.testimony-box p {
-  margin-bottom: 10px;
-  font-size: 1rem;  /*1rem usually 16px but uses the html base format*/
-  color: black;
+
+.content-box-product .product-specs li a {
+    color: inherit;
+    text-decoration: none;
 }
-.testimony-box strong {
-  display: block;
-  font-size: 1rem;
-  color: #666;  /*colour difference not necessary*/
-  margin-top: 10px;
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    /* header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .header img {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    /* navbar */
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        gap: 8px;
+    }
+
+    ul li a {
+        width: 90%;
+        max-width: 300px;
+        padding: 12px 15px;
+    }
+
+    /* home page */
+    .content-row-home {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .content-box-home {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box-home img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .content-box-home:nth-child(2) img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .content-box-home input,
+    .content-box-home button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    footer .footer-icons {
+        position: relative;
+        right: 0;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    footer .footer-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* contact us */
+    .contactus-section {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 768px;
+        margin-left: 2%;
+    }
+
+    .companyinfo-box {
+        width: 98%;
+        text-align: center;
+    }
+
+    .title-box {
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .contact-us-column {
+        width: 98%;
+        column-count: 1;
+    }
+
+    /* about us */
+    .aboutus-section {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 768px;
+        margin-left: 2%;
+    }
+
+    .aboutus-intro img {
+        width: 98%;
+    }
+
+    .testimony-row {
+        flex-direction: column;
+    }
+
+    .testimony-box {
+        width: 98%;
+        text-align: center;
+    }
+
+    .company-text p {
+        text-align: center;
+    }
+
+    /* mobile layout for products */
+    .content-row-product {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content-box-product {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .content-box-product img {
+        width: 100%;
+        height: auto;
+    }
 }
-}   
