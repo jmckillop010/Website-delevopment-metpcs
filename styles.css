@@ -102,14 +102,16 @@ h1 {
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 350px;
+    height: auto;
     margin: 1%;
 }
 
 .content-box-home img {
     margin-bottom: 10px;
-    height: 175px;
+    width: 100%;
     max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .image-placeholder {
