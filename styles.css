@@ -385,6 +385,16 @@ h4 {
         text-align: center;
     }
 
+    .header a {
+        left: 0;  /*attemping to undo the desktop positioning effect */
+        margin: 0 auto; /* Just incase, unsure if needed */
+
+    }
+
+    .header img {
+        margin:0 auto /* To further support centered image */
+    }
+
     /* navbar */
     ul {
   
